@@ -152,15 +152,14 @@ MAÇ UZAR ise skorTabelasi(periyotSkoru,takimSkoru,4)
 // NOTE: Bununla ilgili bir test yoktur. Eğer logladığınız sonuçlar yukarıdakine benziyor ise tmamlandı sayabilirsiniz.
 
 function skorTabelasi(periyotSkoru, takimSkoru, periyotSayisi) {
-
   let Periyotlar = [];
-  let a
+  let a;
   for (let index = 1; index <= periyotSayisi; index++) {
     a = periyotSkoru(takimSkoru);
-    Periyotlar.push(a)
-    console.log(`${index} Periyot: ${a}`)
+    Periyotlar.push(a);
+    console.log(`${index} Periyot: ${a}`);
   }
-  return Periyotlar
+  return Periyotlar;
 }
 
 //console.log(skorTabelasi(periyotSkoru,takimSkoru,4))
